@@ -39,7 +39,7 @@ python scripts/verify.py
 ```
 
 ```bash
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-dev.txt
 python -m pip install -e .
 ruff check .
 pytest -q
@@ -57,4 +57,19 @@ python -m compileall -q bot.py src test_bot.py
 
 ## 📄 ライセンス
 
-MIT License
+AsobiBot は [MIT License](LICENSE) のもとでライセンスされています。
+
+### 📦 第三者ライブラリ
+
+AsobiBot は第三者ライブラリを利用しています。各ライブラリには、それぞれのライセンス条件が適用されます。
+
+- [discord.py](https://github.com/Rapptz/discord.py) — MIT License
+- [python-dotenv](https://github.com/theskumar/python-dotenv) — BSD-3-Clause
+
+開発・テスト用途では、以下のライブラリも利用しています。
+
+- [pytest](https://github.com/pytest-dev/pytest) — MIT License
+- [Ruff](https://github.com/astral-sh/ruff) — MIT License
+- [build](https://github.com/pypa/build) — MIT License
+
+詳細は [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) を参照してください。
